@@ -1,0 +1,138 @@
+
+{
+  "Header": {
+    "productName": "My Audio Text"
+  },
+  "LanguageSwitcher": {
+    "language": "Language",
+    "en": "English",
+    "pt-BR": "Português (Brasil)"
+  },
+  "HeroSection": {
+    "headline": "Convert WhatsApp Audio Messages to Text Instantly",
+    "subtitle": "Accessible, direct, and incredibly fast. Never miss a word again.",
+    "cta": "Start Free 15-Day Trial"
+  },
+  "FeaturesSection": {
+    "title": "Everything you need, nothing you don't.",
+    "whatsapp": {
+      "title": "Automatic WhatsApp Transcription",
+      "description": "Forward any audio and get the text back in seconds."
+    },
+    "comparison": {
+      "title": "Faster & More Accurate",
+      "description": "Our AI outperforms native solutions, providing reliable transcriptions every time."
+    },
+    "longAudio": {
+      "title": "Long Audio + AI Summary",
+      "description": "Transcribe long audios and get a quick summary. Perfect for busy people."
+    },
+    "simple": {
+      "title": "Simple to Use",
+      "description": "No app to install. It just works, directly in your WhatsApp."
+    },
+    "accessibility": {
+      "title": "Accessibility-Focused",
+      "description": "Designed with the deaf and hard of hearing community in mind."
+    },
+    "comingSoon": {
+      "title": "More Platforms",
+      "description": "Instagram Direct and Telegram support is just around the corner.",
+      "badge": "Coming Soon"
+    }
+  },
+  "ComparisonSection": {
+    "title": "See the Difference",
+    "subtitle": "Don't settle for incomplete or failed transcriptions. Our solution delivers.",
+    "whatsappNative": {
+      "title": "WhatsApp Native"
+    },
+    "myAudioText": {
+      "title": "My Audio Text"
+    }
+  },
+  "HowItWorksSection": {
+    "title": "Get Started in 3 Simple Steps",
+    "subtitle": "No complex setups. Your instant transcription service is moments away.",
+    "steps": [
+      {
+        "title": "Enter Your Number",
+        "description": "Provide your WhatsApp number, including the area code, on our secure platform."
+      },
+      {
+        "title": "Start Your Trial",
+        "description": "Activate your 15-day free trial. No credit card required to get started."
+      },
+      {
+        "title": "Receive Transcriptions",
+        "description": "Forward any audio message to our contact and receive the text back instantly."
+      }
+    ]
+  },
+  "AccessibilitySection": {
+    "tagline": "Communication for All",
+    "title": "Empowering a More Inclusive World",
+    "description": "My Audio Text was born from a desire to break down communication barriers. For the deaf and hard of hearing community, audio messages can be a frustrating obstacle. Our mission is to provide a simple, effective tool that ensures everyone can be part of the conversation, effortlessly."
+  },
+  "PricingSection": {
+    "title": "One Simple Plan",
+    "subtitle": "Transparent and accessible pricing for everyone.",
+    "plan": {
+      "name": "Unlimited Access",
+      "description": "All features, no limits.",
+      "currency": "BRL",
+      "period": "month",
+      "features": [
+        "Unlimited audio transcriptions",
+        "Long audio support",
+        "AI-powered summaries",
+        "Priority customer support",
+        "Access to future platform integrations"
+      ]
+    },
+    "cta": "Subscribe Now",
+    "trial_info": "15-day free trial, no credit card required."
+  },
+  "FAQSection": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Have questions? We have answers. If you can't find what you're looking for, feel free to contact us.",
+    "faqs": [
+      {
+        "question": "How accurate are the transcriptions?",
+        "answer": "Our transcription accuracy is over 95% for clear audio, thanks to advanced AI models. Accuracy can vary depending on background noise and speaker clarity."
+      },
+      {
+        "question": "Is there a limit on the length of audio messages?",
+        "answer": "We support audio messages up to 10 minutes long. For audios longer than 3 minutes, we also provide a concise AI-generated summary along with the full transcription."
+      },
+      {
+        "question": "How can I cancel my subscription?",
+        "answer": "You can cancel your subscription at any time from your account dashboard. The process is simple and immediate, with no questions asked."
+      },
+      {
+        "question": "When will Instagram and Telegram be supported?",
+        "answer": "We are actively developing integrations for Instagram Direct and Telegram. We expect to launch them in the coming months. All current subscribers will get access automatically."
+      },
+      {
+        "question": "How is my privacy protected?",
+        "answer": "We take data security very seriously. Audio files are processed securely and deleted from our servers immediately after transcription. We do not store your conversations."
+      },
+      {
+        "question": "What languages are supported for transcription?",
+        "answer": "Currently, our service is optimized for Portuguese and English. We are working to add support for more languages in the future."
+      }
+    ]
+  },
+  "Footer": {
+    "description": "Instant audio transcription for WhatsApp.",
+    "cta_title": "Ready to get started?",
+    "cta_subtitle": "Stop missing out on conversations. Start your free trial today.",
+    "links": {
+      "title": "Useful Links",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Policy",
+      "contact": "Contact Us"
+    },
+    "copyright": "My Audio Text. All rights reserved."
+  }
+}

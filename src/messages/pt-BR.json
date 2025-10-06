@@ -1,0 +1,138 @@
+
+{
+  "Header": {
+    "productName": "My Audio Text"
+  },
+  "LanguageSwitcher": {
+    "language": "Idioma",
+    "en": "English",
+    "pt-BR": "Português (Brasil)"
+  },
+  "HeroSection": {
+    "headline": "Converta Mensagens de Áudio do WhatsApp em Texto Instantaneamente",
+    "subtitle": "Acessível, direto e incrivelmente rápido. Nunca mais perca uma palavra.",
+    "cta": "Iniciar Teste Grátis de 15 Dias"
+  },
+  "FeaturesSection": {
+    "title": "Tudo o que você precisa, e nada mais.",
+    "whatsapp": {
+      "title": "Transcrição Automática no WhatsApp",
+      "description": "Encaminhe qualquer áudio e receba o texto em segundos."
+    },
+    "comparison": {
+      "title": "Mais Rápido e Preciso",
+      "description": "Nossa IA supera as soluções nativas, fornecendo transcrições confiáveis sempre."
+    },
+    "longAudio": {
+      "title": "Áudios Longos + Resumo por IA",
+      "description": "Transcreva áudios longos e receba um resumo rápido. Perfeito para pessoas ocupadas."
+    },
+    "simple": {
+      "title": "Simples de Usar",
+      "description": "Nenhum app para instalar. Simplesmente funciona, diretamente no seu WhatsApp."
+    },
+    "accessibility": {
+      "title": "Foco em Acessibilidade",
+      "description": "Projetado com a comunidade de surdos e deficientes auditivos em mente."
+    },
+    "comingSoon": {
+      "title": "Mais Plataformas",
+      "description": "O suporte para Instagram Direct e Telegram está chegando.",
+      "badge": "Em Breve"
+    }
+  },
+  "ComparisonSection": {
+    "title": "Veja a Diferença",
+    "subtitle": "Não se contente com transcrições incompletas ou falhas. Nossa solução entrega.",
+    "whatsappNative": {
+      "title": "Nativo do WhatsApp"
+    },
+    "myAudioText": {
+      "title": "My Audio Text"
+    }
+  },
+  "HowItWorksSection": {
+    "title": "Comece em 3 Passos Simples",
+    "subtitle": "Sem configurações complexas. Seu serviço de transcrição instantânea está a momentos de distância.",
+    "steps": [
+      {
+        "title": "Digite Seu Número",
+        "description": "Forneça seu número do WhatsApp, incluindo o DDD, em nossa plataforma segura."
+      },
+      {
+        "title": "Inicie seu Teste",
+        "description": "Ative seu teste gratuito de 15 dias. Nenhum cartão de crédito é necessário para começar."
+      },
+      {
+        "title": "Receba Transcrições",
+        "description": "Encaminhe qualquer mensagem de áudio para nosso contato e receba o texto de volta instantaneamente."
+      }
+    ]
+  },
+  "AccessibilitySection": {
+    "tagline": "Comunicação para Todos",
+    "title": "Empoderando um Mundo Mais Inclusivo",
+    "description": "O My Audio Text nasceu do desejo de quebrar barreiras de comunicação. Para a comunidade de surdos e deficientes auditivos, as mensagens de áudio podem ser um obstáculo frustrante. Nossa missão é fornecer uma ferramenta simples e eficaz que garanta que todos possam fazer parte da conversa, sem esforço."
+  },
+  "PricingSection": {
+    "title": "Um Plano Simples",
+    "subtitle": "Preços transparentes e acessíveis para todos.",
+    "plan": {
+      "name": "Acesso Ilimitado",
+      "description": "Todos os recursos, sem limites.",
+      "currency": "BRL",
+      "period": "mês",
+      "features": [
+        "Transcrições de áudio ilimitadas",
+        "Suporte a áudios longos",
+        "Resumos gerados por IA",
+        "Suporte prioritário ao cliente",
+        "Acesso a futuras integrações de plataforma"
+      ]
+    },
+    "cta": "Assine Agora",
+    "trial_info": "15 dias de teste grátis, sem necessidade de cartão de crédito."
+  },
+  "FAQSection": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Tem perguntas? Nós temos respostas. Se não encontrar o que procura, sinta-se à vontade para nos contatar.",
+    "faqs": [
+      {
+        "question": "Qual a precisão das transcrições?",
+        "answer": "Nossa precisão de transcrição é superior a 95% para áudios claros, graças a modelos avançados de IA. A precisão pode variar dependendo do ruído de fundo e da clareza do locutor."
+      },
+      {
+        "question": "Existe um limite para a duração das mensagens de áudio?",
+        "answer": "Suportamos mensagens de áudio de até 10 minutos. Para áudios com mais de 3 minutos, também fornecemos um resumo conciso gerado por IA junto com a transcrição completa."
+      },
+      {
+        "question": "Como posso cancelar minha assinatura?",
+        "answer": "Você pode cancelar sua assinatura a qualquer momento no painel da sua conta. O processo é simples e imediato, sem perguntas."
+      },
+      {
+        "question": "Quando o Instagram e o Telegram serão suportados?",
+        "answer": "Estamos desenvolvendo ativamente integrações para o Instagram Direct e o Telegram. Esperamos lançá-las nos próximos meses. Todos os assinantes atuais terão acesso automaticamente."
+      },
+      {
+        "question": "Como minha privacidade é protegida?",
+        "answer": "Levamos a segurança dos dados muito a sério. Os arquivos de áudio são processados com segurança e excluídos de nossos servidores imediatamente após a transcrição. Não armazenamos suas conversas."
+      },
+      {
+        "question": "Quais idiomas são suportados para transcrição?",
+        "answer": "Atualmente, nosso serviço é otimizado para Português e Inglês. Estamos trabalhando para adicionar suporte a mais idiomas no futuro."
+      }
+    ]
+  },
+  "Footer": {
+    "description": "Transcrição instantânea de áudio para WhatsApp.",
+    "cta_title": "Pronto para começar?",
+    "cta_subtitle": "Pare de ficar de fora das conversas. Comece seu teste gratuito hoje.",
+    "links": {
+      "title": "Links Úteis",
+      "terms": "Termos de Serviço",
+      "privacy": "Política de Privacidade",
+      "contact": "Contato"
+    },
+    "copyright": "My Audio Text. Todos os direitos reservados."
+  }
+}
