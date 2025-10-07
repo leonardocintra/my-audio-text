@@ -1,5 +1,7 @@
 import { getTranslations } from 'next-intl/server';
 import StartTrialForm from '@/components/StartTrialForm';
+import { locales } from '@/config';
+import { Link } from '@/navigation';
 
 export default async function StartTrialPage() {
   const t = await getTranslations('StartTrialPage');

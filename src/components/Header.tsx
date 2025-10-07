@@ -1,5 +1,5 @@
 import { getTranslations } from 'next-intl/server';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 import LanguageSwitcher from './LanguageSwitcher';
 import { MessageSquareText } from 'lucide-react';
 import { Button } from './ui/button';

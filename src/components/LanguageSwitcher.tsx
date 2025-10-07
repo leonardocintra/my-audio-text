@@ -1,7 +1,7 @@
 'use client';
 
 import { useLocale } from 'next-intl';
-import { usePathname, useRouter } from 'next/navigation';
+import { usePathname, useRouter } from '@/navigation';
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -17,9 +17,7 @@ export default function LanguageSwitcher() {
   const pathname = usePathname();
 
   const onSelectChange = (value: string) => {
-    // router.replace(pathname, { locale: value });
-    const newPath = `/${value}${pathname}`;
-    router.replace(newPath);
+    router.replace(pathname, {locale: value});
   };
 
   return (

@@ -45,7 +45,7 @@ export default async function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-border flex flex-col-reverse sm:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} {t('copyright')} {t('developedBy')} <Link href="https://leonardocintra.com.br" target="_blank" className="underline hover:text-primary-foreground">Leonardo Cintra</Link>.</p>
+          <p className="text-sm text-muted-foreground">&copy; {new Date().getFullYear()} {t('copyright')} {t('developedBy')} <a href="https://leonardocintra.com.br" target="_blank" rel="noopener noreferrer" className="underline hover:text-primary-foreground">Leonardo Cintra</a>.</p>
           <LanguageSwitcher />
         </div>
       </div>

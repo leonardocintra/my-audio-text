@@ -1,6 +1,6 @@
 import { getTranslations } from 'next-intl/server';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 
 export default async function HeroSection() {
   const t = await getTranslations('HeroSection');

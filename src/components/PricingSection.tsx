@@ -2,7 +2,7 @@ import { getFormatter, getTranslations, getLocale } from 'next-intl/server';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Check } from 'lucide-react';
-import Link from 'next/link';
+import { Link } from '@/navigation';
 
 export default async function PricingSection() {
   const t = await getTranslations('PricingSection');
@@ -45,7 +45,7 @@ export default async function PricingSection() {
           </CardContent>
           <CardFooter className="flex-col gap-4 p-6">
             <Button asChild size="lg" className="w-full font-bold">
-              <Link href="#">{t('cta')}</Link>
+              <Link href="/start">{t('cta')}</Link>
             </Button>
             <p className="text-xs text-muted-foreground">{t('trial_info')}</p>
           </CardFooter>
