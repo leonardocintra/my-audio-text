@@ -20,7 +20,7 @@ export default async function Footer() {
             </Link>
             <p className="text-sm text-muted-foreground">{t('description')}</p>
             <div className="flex space-x-4">
-              <Link href="#" className="text-muted-foreground hover:text-primary-foreground transition-colors"><Github /></Link>
+              <Link href="https://github.com/leonardocintra/my-audio-text" className="text-muted-foreground hover:text-primary-foreground transition-colors"><Github /></Link>
               <Link href="#" className="text-muted-foreground hover:text-primary-foreground transition-colors"><Twitter /></Link>
               <Link href="#" className="text-muted-foreground hover:text-primary-foreground transition-colors"><Linkedin /></Link>
             </div>
