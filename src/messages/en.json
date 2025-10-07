@@ -135,5 +135,18 @@
     },
     "copyright": "My Audio Text. All rights reserved.",
     "developedBy": "Developed by"
+  },
+  "StartTrialPage": {
+    "title": "Start Your Free Trial",
+    "subtitle": "Just a few details to get you started on your 15-day free trial. No credit card required.",
+    "form": {
+      "nameLabel": "Full Name",
+      "namePlaceholder": "e.g. John Doe",
+      "whatsappLabel": "WhatsApp Number (with area code)",
+      "whatsappPlaceholder": "e.g. 11999999999",
+      "emailLabel": "Email (Optional)",
+      "emailPlaceholder": "e.g. john.doe@example.com",
+      "submitButton": "Start Free Trial"
+    }
   }
 }

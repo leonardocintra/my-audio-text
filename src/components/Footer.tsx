@@ -39,7 +39,7 @@ export default async function Footer() {
             <h3 className="font-semibold text-primary-foreground tracking-wider uppercase font-headline">{t('cta_title')}</h3>
             <p className="mt-4 text-sm text-muted-foreground">{t('cta_subtitle')}</p>
             <Button asChild className="mt-4 font-bold">
-              <Link href="#">{tHero('cta')}</Link>
+              <Link href="/start">{tHero('cta')}</Link>
             </Button>
           </div>
         </div>

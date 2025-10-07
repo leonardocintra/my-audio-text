@@ -135,5 +135,18 @@
     },
     "copyright": "My Audio Text. Todos os direitos reservados.",
     "developedBy": "Desenvolvido por"
+  },
+  "StartTrialPage": {
+    "title": "Inicie seu Teste Gratuito",
+    "subtitle": "Apenas alguns detalhes para você começar seu teste gratuito de 15 dias. Nenhum cartão de crédito é necessário.",
+    "form": {
+      "nameLabel": "Nome Completo",
+      "namePlaceholder": "Ex: João da Silva",
+      "whatsappLabel": "Número do WhatsApp (com DDD)",
+      "whatsappPlaceholder": "Ex: 11999999999",
+      "emailLabel": "Email (Opcional)",
+      "emailPlaceholder": "Ex: joao.silva@exemplo.com",
+      "submitButton": "Iniciar Teste Grátis"
+    }
   }
 }

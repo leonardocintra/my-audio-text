@@ -19,7 +19,7 @@ export default async function HeroSection() {
         </p>
         <div className="mt-10">
           <Button asChild size="lg" className="font-bold text-lg px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-shadow duration-300 transform hover:scale-105">
-            <Link href="#">{t('cta')}</Link>
+            <Link href="/start">{t('cta')}</Link>
           </Button>
         </div>
       </div>

@@ -20,7 +20,7 @@ export default async function Header() {
         <div className="flex flex-1 items-center justify-end space-x-2">
            <LanguageSwitcher />
            <Button asChild className="hidden sm:flex">
-             <Link href="#">{tHero('cta')}</Link>
+             <Link href="/start">{tHero('cta')}</Link>
            </Button>
         </div>
       </div>
