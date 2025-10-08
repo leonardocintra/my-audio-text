@@ -148,5 +148,29 @@
       "emailPlaceholder": "Ex: joao.silva@exemplo.com",
       "submitButton": "Iniciar Teste Grátis"
     }
+  },
+  "ActivatePage": {
+    "welcome": "Bem-vindo ao My Audio Text!",
+    "accountCreated": "Sua conta foi criada com sucesso. Agora você precisa ativar seu acesso.",
+    "activateAccount": "Ative sua conta",
+    "scanOrUseCode": "Escaneie o QR Code ou use o código manual abaixo",
+    "qrCodePlaceholder": "QR Code será\nexibido aqui",
+    "orText": "ou",
+    "manualCodeLabel": "Código de ativação manual:",
+    "copyButton": "Copiar",
+    "howToActivate": "Como ativar:",
+    "instructions": {
+      "step1": "Escaneie o QR Code com seu celular, ou",
+      "step2": "Copie o código manual acima",
+      "step3": "Envie o código via WhatsApp para ativar"
+    },
+    "whatsappConfirmation": "Você receberá uma confirmação no WhatsApp quando a ativação for concluída!",
+    "needHelp": "Precisa de ajuda? Entre em contato conosco pelo WhatsApp",
+    "toast": {
+      "codeCopied": "Código copiado!",
+      "codeCopiedDescription": "O código de ativação foi copiado para sua área de transferência.",
+      "copyError": "Erro ao copiar",
+      "copyErrorDescription": "Não foi possível copiar o código. Tente novamente."
+    }
   }
 }

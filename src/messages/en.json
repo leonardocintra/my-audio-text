@@ -148,5 +148,29 @@
       "emailPlaceholder": "e.g. john.doe@example.com",
       "submitButton": "Start Free Trial"
     }
+  },
+  "ActivatePage": {
+    "welcome": "Welcome to My Audio Text!",
+    "accountCreated": "Your account has been created successfully. Now you need to activate your access.",
+    "activateAccount": "Activate your account",
+    "scanOrUseCode": "Scan the QR Code or use the manual code below",
+    "qrCodePlaceholder": "QR Code will be\ndisplayed here",
+    "orText": "or",
+    "manualCodeLabel": "Manual activation code:",
+    "copyButton": "Copy",
+    "howToActivate": "How to activate:",
+    "instructions": {
+      "step1": "Scan the QR Code with your phone, or",
+      "step2": "Copy the manual code above",
+      "step3": "Send the code via WhatsApp to activate"
+    },
+    "whatsappConfirmation": "You will receive a confirmation on WhatsApp when activation is complete!",
+    "needHelp": "Need help? Contact us via WhatsApp",
+    "toast": {
+      "codeCopied": "Code copied!",
+      "codeCopiedDescription": "The activation code has been copied to your clipboard.",
+      "copyError": "Error copying",
+      "copyErrorDescription": "Could not copy the code. Please try again."
+    }
   }
 }
