@@ -1,11 +1,70 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, QrCode } from "lucide-react";
 import { getTranslations } from "next-intl/server";
-import CopyCodeButton from "./components/CopyCodeButton";
+import CopyCodeButton from "../../../components/CopyCodeButton";
+import Image from "next/image";
 
-export default async function ActivatePage() {
+interface PageProps {
+  searchParams: Promise<{ instanceName?: string }>;
+}
+
+export default async function ActivatePage({ searchParams }: PageProps) {
+  const params = await searchParams;
+  const instanceName = params.instanceName;
+
   const t = await getTranslations("ActivatePage");
-  const activationCode = "MTA-789-XYZ-456"; // Código de exemplo
+
+  // Buscar dados do pairing code se instanceName estiver presente
+  let pairingData = null;
+  let activationCode = "MTA-789-XYZ-456"; // Código padrão
+  let qrCodeBase64 = null;
+
+  if (instanceName) {
+    try {
+      const response = await fetch(
+        `${
+          process.env.NEXT_PUBLIC_BASE_URL || "http://localhost:9002"
+        }/api/leonardo?instanceName=${encodeURIComponent(instanceName)}`,
+        {
+          cache: "no-store",
+        }
+      );
+
+      if (response.ok) {
+        const apiResponse = await response.json();
+        pairingData = apiResponse;        
+        let bodyData = null;
+        
+        // Verificar se é um array com body
+        if (apiResponse && Array.isArray(apiResponse) && apiResponse.length > 0 && apiResponse[0].body) {
+          bodyData = apiResponse[0].body;
+        }
+        // Verificar se o objeto tem as propriedades diretamente
+        else if (apiResponse && apiResponse.pairingCode) {
+          bodyData = apiResponse;
+        }
+        
+        if (bodyData) {
+          // Usar o pairingCode como código de ativação
+          if (bodyData.pairingCode) {
+            activationCode = bodyData.pairingCode;
+          }
+
+          // Extrair o base64 do QR Code (removendo o prefixo data:image/png;base64,)
+          if (bodyData.base64) {
+            qrCodeBase64 = bodyData.base64.replace(
+              "data:image/png;base64,",
+              ""
+            );
+          }
+        }
+      } else {
+        console.error("Erro ao buscar dados do pairing:", response.status);
+      }
+    } catch (error) {
+      console.error("Erro na requisição do pairing:", error);
+    }
+  }
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
@@ -31,14 +90,28 @@ export default async function ActivatePage() {
           </CardHeader>
 
           <CardContent className="space-y-6">
-            {/* QR Code Placeholder */}
+            {/* QR Code */}
             <div className="flex justify-center">
-              <div className="w-48 h-48 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center">
-                <QrCode className="h-12 w-12 text-gray-400 mb-2" />
-                <p className="text-sm text-gray-500 text-center whitespace-pre-line">
-                  {t("qrCodePlaceholder")}
-                </p>
-              </div>
+              {qrCodeBase64 ? (
+                <div className="w-48 h-48 border-2 border-gray-300 rounded-lg overflow-hidden">
+                  <Image
+                    src={`data:image/png;base64,${qrCodeBase64}`}
+                    alt="QR Code para ativação"
+                    width={192}
+                    height={192}
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+              ) : (
+                <div className="w-48 h-48 bg-gray-100 border-2 border-dashed border-gray-300 rounded-lg flex flex-col items-center justify-center">
+                  <QrCode className="h-12 w-12 text-gray-400 mb-2" />
+                  <p className="text-sm text-gray-500 text-center whitespace-pre-line">
+                    {instanceName
+                      ? "Carregando QR Code..."
+                      : t("qrCodePlaceholder")}
+                  </p>
+                </div>
+              )}
             </div>
 
             {/* Separador */}
@@ -55,9 +128,9 @@ export default async function ActivatePage() {
 
             {/* Código Manual */}
             <div className="space-y-3">
-              <label className="text-sm font-medium text-gray-700">
+              <p className="text-sm font-medium text-gray-700">
                 {t("manualCodeLabel")}
-              </label>
+              </p>
               <div className="flex items-center space-x-2">
                 <div className="flex-1 p-3 bg-gray-50 border border-gray-200 rounded-md">
                   <code className="text-sm font-mono text-gray-800">
@@ -100,6 +173,36 @@ export default async function ActivatePage() {
             </div>
           </CardContent>
         </Card>
+
+        {/* Debug Info (temporário) */}
+        {instanceName && (
+          <Card className="w-full shadow-lg bg-yellow-50 border-yellow-200">
+            <CardHeader>
+              <CardTitle className="text-sm text-yellow-800">
+                Debug Info (temporário)
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-2 text-xs">
+                <p>
+                  <strong>Instance Name:</strong> {instanceName}
+                </p>
+                <p>
+                  <strong>Activation Code:</strong> {activationCode}
+                </p>
+                <p>
+                  <strong>QR Code Base64 Length:</strong> {qrCodeBase64?.length || 'null'}
+                </p>
+                <p>
+                  <strong>Pairing Data:</strong>
+                </p>
+                <pre className="bg-yellow-100 p-2 rounded text-xs overflow-auto">
+                  {JSON.stringify(pairingData, null, 2)}
+                </pre>
+              </div>
+            </CardContent>
+          </Card>
+        )}
 
         {/* Footer */}
         <div className="text-center text-sm text-gray-500">
