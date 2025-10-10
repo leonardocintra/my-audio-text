@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { CheckCircle, QrCode } from "lucide-react";
+import { CheckCircle, Link, QrCode } from "lucide-react";
 import { getTranslations } from "next-intl/server";
 import CopyCodeButton from "../../../components/CopyCodeButton";
 import Image from "next/image";
@@ -16,7 +16,7 @@ export default async function ActivatePage({ searchParams }: PageProps) {
 
   // Buscar dados do pairing code se instanceName estiver presente
   let pairingData = null;
-  let activationCode = "MTA-789-XYZ-456"; // Código padrão
+  let activationCode = "ERRO"; // Código padrão
   let qrCodeBase64 = null;
 
   if (instanceName) {
@@ -32,18 +32,23 @@ export default async function ActivatePage({ searchParams }: PageProps) {
 
       if (response.ok) {
         const apiResponse = await response.json();
-        pairingData = apiResponse;        
+        pairingData = apiResponse;
         let bodyData = null;
-        
+
         // Verificar se é um array com body
-        if (apiResponse && Array.isArray(apiResponse) && apiResponse.length > 0 && apiResponse[0].body) {
+        if (
+          apiResponse &&
+          Array.isArray(apiResponse) &&
+          apiResponse.length > 0 &&
+          apiResponse[0].body
+        ) {
           bodyData = apiResponse[0].body;
         }
         // Verificar se o objeto tem as propriedades diretamente
         else if (apiResponse && apiResponse.pairingCode) {
           bodyData = apiResponse;
         }
-        
+
         if (bodyData) {
           // Usar o pairingCode como código de ativação
           if (bodyData.pairingCode) {
@@ -175,7 +180,7 @@ export default async function ActivatePage({ searchParams }: PageProps) {
         </Card>
 
         {/* Debug Info (temporário) */}
-        {instanceName && (
+        {/* {instanceName && (
           <Card className="w-full shadow-lg bg-yellow-50 border-yellow-200">
             <CardHeader>
               <CardTitle className="text-sm text-yellow-800">
@@ -202,11 +207,18 @@ export default async function ActivatePage({ searchParams }: PageProps) {
               </div>
             </CardContent>
           </Card>
-        )}
+        )} */}
 
         {/* Footer */}
         <div className="text-center text-sm text-gray-500">
           <p>{t("needHelp")}</p>
+          <Link
+            href="https://wa.me/5516999735008"
+            target="_blank"
+            className="text-blue-600 hover:underline"
+          >
+            Suporte WhatsApp
+          </Link>
         </div>
       </div>
     </div>
