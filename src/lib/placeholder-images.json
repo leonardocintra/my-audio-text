@@ -3,19 +3,19 @@
 		{
 			"id": "whatsapp-fail",
 			"description": "A screenshot showing WhatsApp's native audio transcription failing or showing an error message.",
-			"imageUrl": "https://picsum.photos/seed/wa-fail/600/400",
+			"imageUrl": "/zap-fail.jpeg",
 			"imageHint": "interface error"
 		},
 		{
 			"id": "our-app-success",
 			"description": "A screenshot showing My Audio Text successfully transcribing an audio message in WhatsApp.",
-			"imageUrl": "https://picsum.photos/seed/wa-success/600/400",
+			"imageUrl": "/zap-ok.jpeg",
 			"imageHint": "interface success"
 		},
 		{
 			"id": "accessibility-empowerment",
 			"description": "An image representing empowerment and communication for the deaf and hard of hearing community.",
-			"imageUrl": "https://picsum.photos/seed/a11y-empower/600/400",
+			"imageUrl": "/inclusao.png",
 			"imageHint": "people communicating"
 		}
 	]

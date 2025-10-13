@@ -15,7 +15,18 @@ export const routing = defineRouting({
       en: "/start",
       "pt-BR": "/iniciar",
     },
-    "/activate": "/activate",
+    "/activate": {
+      en: "/activate",
+      "pt-BR": "/ativar",
+    },
+    "/terms": {
+      en: "/terms",
+      "pt-BR": "/termos",
+    },
+    "/privacy": {
+      en: "/privacy",
+      "pt-BR": "/privacidade",
+    },
   },
 });
 

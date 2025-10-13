@@ -1,8 +1,9 @@
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
+import { Link as LinkNavigation } from "@/navigation";
 import { Button } from "./ui/button";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { Github, Twitter, Linkedin, MessageSquareText } from "lucide-react";
+import Link from "next/link";
 
 export default async function Footer() {
   const t = await getTranslations("Footer");
@@ -50,20 +51,20 @@ export default async function Footer() {
             </h3>
             <ul className="mt-4 space-y-3">
               <li>
-                <Link
-                  href="#"
+                <LinkNavigation
+                  href="/terms"
                   className="text-muted-foreground hover:text-primary-foreground transition-colors"
                 >
                   {t("links.terms")}
-                </Link>
+                </LinkNavigation>
               </li>
               <li>
-                <Link
-                  href="#"
+                <LinkNavigation
+                  href="/privacy"
                   className="text-muted-foreground hover:text-primary-foreground transition-colors"
                 >
                   {t("links.privacy")}
-                </Link>
+                </LinkNavigation>
               </li>
               <li>
                 <Link
